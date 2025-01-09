@@ -1,0 +1,28 @@
+slack: https://setu-hdip-comp-sci-24.slack.com/archives/C088B00V5U1
+parent: course/wit-hdip-comp-sci-2024
+credits: Eamonn de Leastar
+  github: https://github.com/wit-hdip-comp-sci-2024/full-stack-1/blob/main
+auth: 1
+ignorepin: 2125
+icon:
+  type: la:server
+  color: 2D5BA6
+ignore:
+#  - topic-01-node
+#  - topic-02-hapi
+#  - topic-03-joi
+#  - topic-04-tdd
+#  - topic-05-models
+#  - topic-06-apis
+#  - topic-07-rest
+#  - topic-08-openapi
+#  - topic-09-jwt
+#  - topic-10-seeding
+#  - topic-11-dom
+#  - topic-12-svelte-intro
+#  - topic-13-svelte-components
+#  - topic-14-svelte-routing
+#  - topic-15-svelte-applications
+#  - topic-16-svelte-maps
+#  - topic-17-svelte-full-stack
+#  - topic-18-typescript
