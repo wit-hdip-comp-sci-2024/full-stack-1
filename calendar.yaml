@@ -1,0 +1,56 @@
+title : Semester 3
+weeks :
+  - 2025-01-19 :
+      title : 1
+      type  : Tuition
+  - 2025-01-26 :
+      title : 2
+      type  : Tuition
+  - 2025-02-02 :
+      title : 3
+      type  : Tuition
+  - 2025-02-09 :
+      title : 4
+      type  : Tuition
+  - 2025-02-16 :
+      title : Reading 1
+      type  : Reading
+  - 2025-02-23 :
+      title : 5
+      type  : Tuition
+  - 2025-03-02 :
+      title : 6
+      type  : Tuition 
+  - 2025-03-09 :
+      title : 7
+      type  : Tuition
+  - 2025-03-16 :
+      title : Reading 2
+      type  : Reading
+  - 2025-03-23 :
+      title : 8
+      type  : Tuition
+  - 2025-03-30 :
+      title : 9
+      type  : Tuition
+  - 2025-04-06 :
+      title : 10
+      type  : Tuition
+  - 2025-04-13 :
+      title : Easter 1
+      type  : Reading 3
+  - 2025-04-20 :
+      title : Easter 2
+      type  : Reading 4
+  - 2025-04-27 :
+      title : 11
+      type  : Tuition
+  - 2025-05-04 :
+      title : 12
+      type  : Tuition
+  - 2025-05-11 :
+      title : Reading
+      type  : Reading 5
+  - 2025-05-18 :
+      title : Workshop 4
+      type  : Workshop
