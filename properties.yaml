@@ -15,7 +15,7 @@ ignore:
 #  - topic-03-joi
 #  - topic-04-tdd
 #  - topic-05-models
-#  - topic-06-assignment-1
+  - topic-06-assignment-1
 #  - topic-06-apis
 #  - topic-07-rest
 #  - topic-08-openapi
