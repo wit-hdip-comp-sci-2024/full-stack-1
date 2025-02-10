@@ -1,3 +1,4 @@
+import Mongoose from "mongoose";
 import { Track } from "./track.js";
 import { Playlist } from "./playlist.js";
 
@@ -20,7 +21,7 @@ export const trackMongoStore = {
   },
 
   async getTrackById(id) {
-    if (id) {
+    if (Mongoose.isValidObjectId(id)) {
       const track = await Track.findOne({ _id: id }).lean();
       return track;
     }
