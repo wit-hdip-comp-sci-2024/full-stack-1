@@ -18,7 +18,7 @@ ignore:
 #  - topic-05-models
 #  - topic-06-assignment-1
 #  - topic-07-apis
-#  - topic-07-rest
+  - topic-08-rest
 #  - topic-08-openapi
 #  - topic-09-jwt
 #  - topic-10-seeding
