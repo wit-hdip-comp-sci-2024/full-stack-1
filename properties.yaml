@@ -19,7 +19,7 @@ ignore:
 #  - topic-06-assignment-1
 #  - topic-07-apis
 #  - topic-08-rest
-  - topic-08-openapi
+  - topic-09-openapi
 #  - topic-09-jwt
 #  - topic-10-seeding
 #  - topic-11-dom
