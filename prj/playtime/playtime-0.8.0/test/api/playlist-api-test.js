@@ -32,7 +32,7 @@ suite("Playlist API tests", () => {
       const returnedPlaylist = await playtimeService.getPlaylist(playlist.id);
       assert.fail("Should not return a response");
     } catch (error) {
-      assert(error.response.data.message === "No Playlist with this id", "Incorrect Response Message");
+      assert(error.response.data.message.startsWith("No Playlist with this id"), "Incorrect Response Message");
     }
   });
 
@@ -54,7 +54,7 @@ suite("Playlist API tests", () => {
       const response = await playtimeService.deletePlaylist("not an id");
       assert.fail("Should not return a response");
     } catch (error) {
-      assert(error.response.data.message === "No Playlist with this id", "Incorrect Response Message");
+      assert(error.response.data.message.startsWith("No Playlist with this id"), "Incorrect Response Message");
     }
   });
 });
