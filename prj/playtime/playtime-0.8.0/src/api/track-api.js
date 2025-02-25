@@ -9,7 +9,7 @@ export const trackApi = {
         const tracks = await db.trackStore.getAllTracks();
         return tracks;
       } catch (err) {
-        return Boom.serverUnavailable("Database Error");
+        return Boom.serverUnavailable("Database Error:", err);
       }
     },
   },
@@ -24,7 +24,7 @@ export const trackApi = {
         }
         return track;
       } catch (err) {
-        return Boom.serverUnavailable("No track with this id");
+        return Boom.serverUnavailable("No track with this id:", err);
       }
     },
   },
@@ -39,7 +39,7 @@ export const trackApi = {
         }
         return Boom.badImplementation("error creating track");
       } catch (err) {
-        return Boom.serverUnavailable("Database Error");
+        return Boom.serverUnavailable("Database Error:", err);
       }
     },
   },
@@ -51,7 +51,7 @@ export const trackApi = {
         await db.trackStore.deleteAllTracks();
         return h.response().code(204);
       } catch (err) {
-        return Boom.serverUnavailable("Database Error");
+        return Boom.serverUnavailable("Database Error:", err);
       }
     },
   },
@@ -67,7 +67,7 @@ export const trackApi = {
         await db.trackStore.deleteTrack(track._id);
         return h.response().code(204);
       } catch (err) {
-        return Boom.serverUnavailable("No Track with this id");
+        return Boom.serverUnavailable("No Track with this id:", err);
       }
     },
   },
