@@ -10,7 +10,7 @@ export const playlistApi = {
         const playlists = await db.playlistStore.getAllPlaylists();
         return playlists;
       } catch (err) {
-        return Boom.serverUnavailable("Database Error");
+        return Boom.serverUnavailable("Database Error:", err);
       }
     },
   },
@@ -25,7 +25,7 @@ export const playlistApi = {
         }
         return playlist;
       } catch (err) {
-        return Boom.serverUnavailable("No Playlist with this id");
+        return Boom.serverUnavailable("No Playlist with this id:", err);
       }
     },
   },
@@ -41,7 +41,7 @@ export const playlistApi = {
         }
         return Boom.badImplementation("error creating playlist");
       } catch (err) {
-        return Boom.serverUnavailable("Database Error");
+        return Boom.serverUnavailable("Database Error:", err);
       }
     },
   },
@@ -57,7 +57,7 @@ export const playlistApi = {
         await db.playlistStore.deletePlaylistById(playlist._id);
         return h.response().code(204);
       } catch (err) {
-        return Boom.serverUnavailable("No Playlist with this id");
+        return Boom.serverUnavailable("No Playlist with this id:", err);
       }
     },
   },
@@ -69,7 +69,7 @@ export const playlistApi = {
         await db.playlistStore.deleteAllPlaylists();
         return h.response().code(204);
       } catch (err) {
-        return Boom.serverUnavailable("Database Error");
+        return Boom.serverUnavailable("Database Error:", err);
       }
     },
   },
