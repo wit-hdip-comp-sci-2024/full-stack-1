@@ -21,7 +21,7 @@ ignore:
 #  - topic-08-rest
 #  - topic-09-openapi
 #  - topic-09-jwt
-  - topic-11-seeding
+#  - topic-11-seeding
 #  - topic-11-dom
 #  - topic-12-svelte-intro
 #  - topic-13-svelte-components
