@@ -719,9 +719,9 @@ Blocks, Statements, Functions & Modules.
   -  Multiline imports should be indented just like multiline array and object literals.
  eslint: [`object-curly-newline`](https://eslint.org/docs/rules/object-curly-newline)
 
-    > Why? The curly braces follow the same indentation rules as every other curly brace block in the style guide, as do the trailing commas.
+Why? The curly braces follow the same indentation rules as every other curly brace block in the style guide, as do the trailing commas.
 
-    ```javascript
+~~~javascript
     // bad
     import {longNameA, longNameB, longNameC, longNameD, longNameE} from "path";
  
@@ -733,13 +733,13 @@ Blocks, Statements, Functions & Modules.
       longNameD,
       longNameE,
     } from "path";
-    ```
+~~~
 
   -  Disallow Webpack loader syntax in module import statements.
  eslint: [`import/no-webpack-loader-syntax`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md)
-    > Why? Since using Webpack syntax in the imports couples the code to a module bundler. Prefer using the loader syntax in `webpack.config.js`.
+Why? Since using Webpack syntax in the imports couples the code to a module bundler. Prefer using the loader syntax in `webpack.config.js`.
 
-    ```javascript
+~~~javascript
     // bad
     import fooSass from "css!sass!foo.scss";
     import barCss from "style!css!bar.css";
@@ -747,13 +747,14 @@ Blocks, Statements, Functions & Modules.
     // good
     import fooSass from "foo.scss";
     import barCss from "bar.css";
-    ```
+~~~
 
-  - Do not include JavaScript filename extensions
+Do not include JavaScript filename extensions
  eslint: [`import/extensions`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md)
-    > Why? Including extensions inhibits refactoring, and inappropriately hardcodes implementation details of the module you"re importing in every consumer.
 
-    ```javascript
+Why? Including extensions inhibits refactoring, and inappropriately hardcodes implementation details of the module you"re importing in every consumer.
+
+~~~javascript
     // bad
     import foo from "./foo.js";
     import bar from "./bar.jsx";
@@ -763,5 +764,5 @@ Blocks, Statements, Functions & Modules.
     import foo from "./foo";
     import bar from "./bar";
     import baz from "./baz";
-    ```
+~~~
    
