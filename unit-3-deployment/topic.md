@@ -1,1 +1,1 @@
-Seeding & Deplpyment
+Seeding & Deplopyment
