@@ -1,1 +1,1 @@
-Front End & Svelte
+Seeding & Deplpyment
