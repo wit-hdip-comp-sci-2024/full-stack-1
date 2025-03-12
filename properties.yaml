@@ -11,4 +11,4 @@ icon:
   type: la:server
   color: 2D5BA6
 ignore:
-  - topic-13-dom
+  - topic-14-svelte-intro
