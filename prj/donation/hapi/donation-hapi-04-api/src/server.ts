@@ -12,7 +12,7 @@ import { webRoutes } from "./web-routes.js";
 import { connectDb } from "./models/db.js";
 import { apiRoutes } from "./api-routes.js";
 import { validate } from "./api/jwt-utils.js";
-import jwt from "hapi-auth-jwt2";
+import * as jwt from "hapi-auth-jwt2";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
